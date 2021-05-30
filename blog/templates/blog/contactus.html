@@ -1,0 +1,42 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% block content %}
+<body>
+{% load crispy_forms_tags %}
+<div class="col-sm-9">
+    <h3 class="text-center text-dark">Contact Us</h3>
+    <h4 class="text-white" style="background-color:grey; opacity:0.8;">Contact Us Directly if you have any questions</h4>
+    <p style="margin: 10px; font-weight:bold; background-color:grey; opacity:0.8;" class="text-white">
+        Please write your name, Email address and a message below if you have any questions.
+        we will be happy to contact you directly and answer your questions.
+    </p>
+    <form style="position: absolute;
+  top: 300px;
+  left: 200px;
+  width: 50%;
+  margin: -60px 50px 0px 100px;
+   color:black;" class="col-md-3" action="" method="POST" novalidate >
+        {% csrf_token %}
+        {{form|crispy}}
+        <button type="submit" class="btn btn-info">Submit</button>
+    </form>
+</div>
+<div style="position: absolute;
+  top: 400px;
+  left: 500px;
+  width: 100%;
+  margin: 0;
+  text-align: center;" class="col-md-3 text-center">
+    <ul class="list-unstyled mb-0">
+        <p style="font-weight:bold;">Contact</p>
+        <li><i class="fas fa-phone mt-4 fa-2x"></i>
+            <p>+917020244683</p>
+        </li>
+
+        <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+            <p>er.roshan.y@gmail.com</p>
+        </li>
+    </ul>
+</div>
+</body>
+{% endblock content %}

@@ -1,0 +1,76 @@
+body{
+    background-color: rgb(75,74,74);
+    color: antiquewhite;
+    background: url(blogbg.jpg) no-repeat;
+   background-size: cover;
+}
+nav:hover{
+    color: red;
+}
+
+.jumbo-color {
+    background-color: grey;
+    opacity: 0.9;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    width: 400px;
+    margin: 100px auto 0px auto;
+    background: url(blogbg.jpg) no-repeat;
+    background-size: cover;
+}
+
+
+h3{
+    text-align: center;
+    padding: 20px;
+    font-family: sans-serif;
+    background-color: grey;
+    opacity: 0.9;
+}
+
+.register{
+    background-color: rgba(0,0,0,0.5);
+}
+
+.login{
+    margin: 0;
+    padding: 0;
+    background: url(bgsignin.jpg) no-repeat;
+    background-size: cover;
+}
+
+.login-box{
+    width: 280px;
+    position absolute: absolute;
+    top: 50;
+    left: 50;
+    transform: translate(-50,-50);
+    color: white;
+}
+.login-box h1{
+    float: left;
+    font-size: 40px;
+    border-bottom: 6px solid #4caf50;
+    margin-bottom: 50px;
+    padding: 13px 0
+}
+
+.textbox{
+    width: 100%;
+    overflow: hidden;
+    font-size: 8px 0;
+    padding: 8px 0;
+    margin; 8px 0;
+    border-bottom: 1px solid #4caf50;
+}
+
+td{
+    word-spacing: 10px;
+    opacity: 0.7;
+}
